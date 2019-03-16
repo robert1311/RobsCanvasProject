@@ -1,0 +1,68 @@
+/* Header and footer must match across all pages*/
+/* Style restaurant name with hosted or embedded font*/
+/* Style navigation so:
+	-Visted links appeaar in different color than default.
+	-When hovering over link, text is bold; Normal thickness otherwise.
+	-Active links should not be underlined */
+	
+	header, footer {
+		background-color: #13078b;
+		color: silver;
+		text-align: center;
+		height: 70px;
+		padding-bottom:10px
+	}
+	
+	header {
+		height:100px;
+		padding: 20px 20px 30px 20px;
+		font-family: 'Playfair Display SC', serif;
+		font-size: 1.7em
+	}	
+	
+	footer {
+		padding-top: 10px;
+		margin-top: 20 px;
+	}	
+	
+	/*body {
+		background-color: silver;
+		max-width: 1000 px;
+	}	*/
+	
+	/*nav {
+	border-top: 6px dashed white;
+	border-bottom: 3px dashed #13078b;
+	margin-top: 0px;
+}	
+
+	nav a {
+		background-color: #13078b;
+		color: #fef9ff;
+		padding: 8px;
+		border: thin solid #0d1f2d;
+		text-align: center;
+		display: block;
+		margin: 20px;
+		width: 100px;
+}
+		
+	nav a:visited {
+		color: #ff4e4e;
+}
+	
+	nav a:hover {
+		background-color: #fef9ff;
+		color: #5b7d87;
+		font-weight: bold;
+}
+
+	nav a:active {
+		font-weight: bold;
+		text-decoration: none;
+}	*/
+		
+	
+	
+		
+	
