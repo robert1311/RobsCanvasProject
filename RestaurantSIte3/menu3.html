@@ -16,11 +16,11 @@
 	<title>Menu</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" /> -->
-	<style>
+	<!-- <style>
 		body {
-			background-color: #dbe4ec;
+			background-color: #dbe4ec; -->
 			<!-- max-width: 1000 px; -->
-		}	
+	<!-- 	}	
 		.item {
 			font-size: 1.3em
 		}	
@@ -61,7 +61,7 @@
 		clear: both
 	}	
 	
-	<!-- article.row1 {
+	 article.row1 {
 		float: left
 	}	
 	
@@ -73,7 +73,7 @@
 		text-align: center;
 		margin: auto;
 		padding: 50px
-	}	-->
+	}	
 	 	
 	
 	table {
@@ -107,26 +107,33 @@
 	}	
 	
 
-	</style>
+	</style> -->
 <head>
 <!-- Restaurant Site 3 Menu page -->
 	<body>	
 	<div class="container-fluid">
+	<div class= "p-3 mb-3 bg-secondary text-black">
+	<div class="p-3 mb-2 bg-info text-black">
 		<header>
 			<h1>R&M Bar & Grill</h1>
 	
-		</header>	
+		</header>
+			</div>
 		<hr />
 		<!--navigation-->
-		<nav>
-			<p><a class="btn badge-pill" href="rs3home.html">Home</a></p>
-			<p><a class="btn badge-pill" href="menu3.html">Menu</a></p>
-			<p><a class="btn badge-pill" href="contact3.html">Contact Us</a></p>
+		<div class="p-3 mb-2 bg-info text-black">
+		<nav class="nav">
+			<p class="text-white bg-dark"><a type="button" class="btn btn-outline-info" href="rs3home.html">Home</a></p>
+			<p class="text-white bg-dark"><a type="button" class="btn btn-outline-info" href="menu3.html">Menu</a></p>
+			<p class="text-white bg-dark"><a type="button" class="btn btn-outline-info" href="contact3.html">Contact Us</a></p>
 		</nav>
+		</div>
 		<hr />
 		<!-- Menu items From top left to right then down(need to align with float)-->
-		<section>
-			<article class="row1" id="bf">
+		<section class= "p-3 mb-3 bg-secondary text-white">
+			<div class="col-lg-4 col-md">
+			<div>
+			<!-- <article class="row1" id="bf"> -->
 				<!-- menu item names must be larger than descriptions -->
 				<p class="item"><strong>Burger and Fries</strong></p>
 				<p>An American Classic!<br />
@@ -134,33 +141,42 @@
 				Pickle, onion, tomato, and lettuce<br />
 				Served eith our famoud thick cut french fries<br />
 				$7.95</p><br />
-			</article>
-			<article  class="row1" id="hd">
+			<!-- </article> -->
+			</div>
+			<div>
+			<!--<article  class="row1" id="hd"> -->
 				<p class="item"><strong>Hot Dogs and Chips</strong></p>
 				<p>A Summer Classic!<br />
 				Your choice-white or whear bun<br />
 				Relish, mustard, and ketchup<br />
 				Served with our house-made chips<br />
 				$7.95</p><br />
-			</article>
-			
-			<article  class="row1" id="ip">
+			<!-- </article> -->
+			</div>
+			<div> 
+			<!-- <article  class="row1" id="ip"> -->
 				<p class="item"><strong>Italian Sausage and Peppers</strong></p>
 				<p>An All-Time Favorite!<br />
 				Your choice-mid or spicy Cole Slaw<br />
 				Served with garlic mashers<br />
 				$10.95</p><br />
-			</article>	
-			<div class="clear-float"></div>
-			<article  class="row2" id="ts">
+			<!--</article> -->
+			</div>
+			</div>
+			<div class="col-lg-4 col-md">
+			 <!-- <div class="clear-float"></div> -->
+			<div >
+			<!-- <article  class="row2" id="ts"> -->
 				<p class="item"><strong>Tenderloin Sandwich and Chips</strong></p>
 				<p>Really Hits the Spot!<br />
 				Plain or Sesame Seed Bun<br />
 				Pickle, onion, tomato, and lettuce<br />
 				Served with our house-made chips<br />
 				$8.95</p><br />
-			</article>
-			<article class="row2" id="hs">
+			<!-- </article> -->
+			</div>
+			<div>
+			<!-- <article class="row2" id="hs"> -->
 				<p class="item"><strong>House Salad</strong></p>
 				<p>On the Lighter Side<br />
 				Your choice-with or without cheese<br />
@@ -168,8 +184,10 @@
 				Thousand Island Ranch<br />
 				Dressing Served with a dinner roll<br />
 				$6.95</p><br />
-			</article>	
-			<article class="row2" id="bs">
+			<!-- </article>	-->
+			</div>
+			<div>
+			<!-- <article class="row2" id="bs"> -->
 				<p class="item"><strong>Brisket Sandwich and Fries</strong></p>
 				<p>A Taste of Texas!<br />
 				Smoked Brisket on thick-cut<br />
@@ -178,12 +196,15 @@
 				Served with our famous thick-cut<br />
 				fench fries<br />
 				$7.95</p><br />
-			</article>
+			<!-- </article> -->
+			</div>
+			</div>
+			<!-- <div class="clear-float"></div> -->
 		</section><br />
 		
 		<!-- add section for beverages with table to match style from guide -->
-		<section>
-			<table border="1">
+		<section class= "p-3 mb-3 bg-secondary text-white">
+			<table border="1" class= "p-3 mb-3 bg-secondary text-white">
 				<thead>
 				<tr id="drinks">
 					<th colspan="2">Beverages</th>
@@ -212,11 +233,20 @@
 		</section>
 		
 		<!--end of menu-->
-		<footer>
+		<footer class="p-3 mb-2 bg-info text-black">
 			<p> 1234 Fake St, Irving, TX, 75060</p>
 			<p> 555-4321</p>
 		</footer>
+		</div>
 	</div>	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+		<!-- CDN version of jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<!--CDN version of Popper.js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<!-- Bootstrap, like CSS, heavily relies on class and id attributes to target specific elements -->
 	</body>
 
 </html>

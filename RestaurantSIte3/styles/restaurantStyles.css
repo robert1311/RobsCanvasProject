@@ -5,7 +5,7 @@
 	-When hovering over link, text is bold; Normal thickness otherwise.
 	-Active links should not be underlined */
 	
-	header, footer {
+	/*header, footer {
 		background-color: #13078b;
 		color: silver;
 		text-align: center;
@@ -23,7 +23,7 @@
 	footer {
 		padding-top: 10px;
 		margin-top: 20 px;
-	}	
+	}	*/
 	
 	/*body {
 		background-color: silver;
