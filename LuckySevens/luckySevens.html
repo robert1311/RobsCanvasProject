@@ -59,13 +59,39 @@
           onreset="resetForm();" class="form-inline">
 				<div class="form-group">
 					<label for="num">Starting Bet:</label>
-						<input type="number" class="form-control" id="num">
+						<input  type="number" class="form-control" id="num">
 				</div>	
 				<button type="submit" id="submitButton" class="btn btn-outline-success">Play</button>
 			</form><br />
 			<!-- adding button from Bootstrap website -->	
 		<!--</section> -->
 	</div>	
+	<table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th colspan="2">Results</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rolls taken before $ ran out:</td>
+                <td><span id="addResult"></span></td>
+            </tr>
+            <tr>
+                <td>Max Amount of $ held:</td>
+                <td><span id="subtractResult"></span></td>
+            </tr>
+            <tr>
+                <td>Rolls taken at time max $ was held:</td>
+                <td><span id="multiplyResult"></span></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	
+	</div>
+		
+			
 		
 	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

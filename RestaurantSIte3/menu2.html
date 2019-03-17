@@ -1,0 +1,216 @@
+<!DOCTYPE.html>
+<!-- Site 2 Menu -->
+<!-- apply all styles with internal style sheet -->
+<!-- give menu background color -->
+
+<!-- Name: Roberto Esquivel
+	Date Created: 3/11/2019
+	Most recent revision:
+-->	
+<html lang="en">
+
+<head>
+	<title>Menu</title>
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			background-color: #dbe4ec;
+			max-width: 1000 px;
+		}	
+		.item {
+			font-size: 1.3em
+		}	
+		
+		nav {
+	border-top: 6px dashed #ff1d1d;
+	border-bottom: 3px dashed #13078b;
+	margin-top: 0px;
+}	
+
+	nav a {
+		background-color: #13078b;
+		color: #fef9ff;
+		padding: 8px;
+		border: thin solid #0d1f2d;
+		text-align: center;
+		display: block;
+		margin: 20px;
+		width: 100px;
+}
+		
+	nav a:visited {
+		color: #ff4e4e;
+}
+	
+	nav a:hover {
+		background-color: #fef9ff;
+		color: #5b7d87;
+		font-weight: bold;
+}
+
+	nav a:active {
+		font-weight: bold;
+		text-decoration: none;
+	}
+		
+	.clear-float{
+		clear: both
+	}	
+	
+	article.row1 {
+		float: left
+	}	
+	
+	article.row2{
+		float: left
+	}	
+	
+	article {
+		text-align: center;
+		margin: auto;
+		padding: 50px
+	}	
+	 	
+	
+	table {
+		border-collapse: collapse;
+		margin: auto;
+		width: 50%
+	}	
+		
+	tr {
+		height: 50px;
+	
+	}	
+	
+	tr, td {
+		border: none
+	}	
+	
+	#drinks {
+		text-align: left;
+		font-size: 1.2em;
+		font-weight: bold;
+		background-color: white;
+	}	
+	
+	th {
+		border-bottom: none;
+	}
+	
+	tbody tr:nth-child(even){
+		background-color: white;
+	}	
+	
+
+	</style>
+<head>
+<!-- Restaurant Site 1 Menu page -->
+	<body>	
+		<header>
+			<h1>R&M Bar & Grill</h1>
+	
+		</header>	
+		<hr />
+		<!--navigation-->
+		<nav>
+			<p><a href="rs2home.html">Home</a></p>
+			<p><a href="menu2.html">Menu</a></p>
+			<p><a href="contact2.html">Contact Us</a></p>
+		</nav>
+		<hr />
+		<!-- Menu items From top left to right then down(need to align with float)-->
+		<section>
+			<article class="row1" id="bf">
+				<!-- menu item names must be larger than descriptions -->
+				<p class="item"><strong>Burger and Fries</strong></p>
+				<p>An American Classic!<br />
+				Your choice-with or without cheese<br />
+				Pickle, onion, tomato, and lettuce<br />
+				Served eith our famoud thick cut french fries<br />
+				$7.95</p><br />
+			</article>
+			<article  class="row1" id="hd">
+				<p class="item"><strong>Hot Dogs and Chips</strong></p>
+				<p>A Summer Classic!<br />
+				Your choice-white or whear bun<br />
+				Relish, mustard, and ketchup<br />
+				Served with our house-made chips<br />
+				$7.95</p><br />
+			</article>
+			
+			<article  class="row1" id="ip">
+				<p class="item"><strong>Italian Sausage and Peppers</strong></p>
+				<p>An All-Time Favorite!<br />
+				Your choice-mid or spicy Cole Slaw<br />
+				Served with garlic mashers<br />
+				$10.95</p><br />
+			</article>	
+			<div class="clear-float"></div>
+			<article  class="row2" id="ts">
+				<p class="item"><strong>Tenderloin Sandwich and Chips</strong></p>
+				<p>Really Hits the Spot!<br />
+				Plain or Sesame Seed Bun<br />
+				Pickle, onion, tomato, and lettuce<br />
+				Served with our house-made chips<br />
+				$8.95</p><br />
+			</article>
+			<article class="row2" id="hs">
+				<p class="item"><strong>House Salad</strong></p>
+				<p>On the Lighter Side<br />
+				Your choice-with or without cheese<br />
+				Iceberg lettuce, tomatoes, peppers<br />
+				Thousand Island Ranch<br />
+				Dressing Served with a dinner roll<br />
+				$6.95</p><br />
+			</article>	
+			<article class="row2" id="bs">
+				<p class="item"><strong>Brisket Sandwich and Fries</strong></p>
+				<p>A Taste of Texas!<br />
+				Smoked Brisket on thick-cut<br />
+				Texas Toast<br />
+				Cole Slaw<br />
+				Served with our famous thick-cut<br />
+				fench fries<br />
+				$7.95</p><br />
+			</article>
+		</section><br />
+		
+		<!-- add section for beverages with table to match style from guide -->
+		<section>
+			<table border="1">
+				<thead>
+				<tr id="drinks">
+					<th colspan="2">Beverages</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				<tr>
+					<td>Lemondae
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+				</tbody>
+			</table>
+			<br />
+		</section>
+		
+		<!--end of menu-->
+		<footer>
+			<p> 1234 Fake St, Irving, TX, 75060</p>
+			<p> 555-4321</p>
+		</footer>
+	</body>
+
+</html>

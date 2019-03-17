@@ -1,6 +1,23 @@
 /* Javascript code for luckySevens file goes here */
 // using layout for clickToAddItems; eliminating num2 and changing
 // appropriate variables, classes, id's
+var die1
+var die2
+var sumRoll = die1 + die2
+
+
+function rollDice() {
+  return Math.floor(Math.random() * 6) + 1;
+	for (startingBet > 0) {
+		if ( sumRoll= 7) {
+			startingBet= startingBet + 4;
+		} else {
+			startingBet--;
+		}
+	}
+		
+		
+
 function clearErrors() {    
     for (var loopCounter = 0; 
         loopCounter < document.forms["startingBet"].elements.length; 
@@ -32,6 +49,8 @@ function validateItems() {
         document.forms["startingBet"]["num"].focus();
         return false;
     }
+	
+	
   // if (num2 == "" || isNaN(num2)) {
     //   alert("Num2 must be filled in with a number.");
       // document.forms["numberFun"]["num2"]
