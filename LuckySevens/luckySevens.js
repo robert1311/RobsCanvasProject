@@ -1,20 +1,36 @@
 /* Javascript code for luckySevens file goes here */
 // using layout for clickToAddItems; eliminating num2 and changing
 // appropriate variables, classes, id's
-var die1
-var die2
-var sumRoll = die1 + die2
+//var die1
+//var die2
+//var sumRoll = die1 + die2
+//var startingBet = document.forms["startingBet"]["num"].value
 
 
-function rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
-	for (startingBet > 0) {
-		if ( sumRoll= 7) {
-			startingBet= startingBet + 4;
-		} else {
-			startingBet--;
-		}
-	}
+
+
+
+
+
+//function rolldice() {
+//    var x = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
+//    var y = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
+//    var dicetotal = x + y;
+
+//}
+ 
+//for (var i ; i > 0; i++) {
+//  console.log(rollDice());
+//}
+	
+	
+//	for (var startingBet > 0) {
+//		if ( sumRoll= 7) {
+//			startingBet= startingBet + 4;
+//		} else {
+//			startingBet--;
+//		}
+//	}
 		
 		
 
