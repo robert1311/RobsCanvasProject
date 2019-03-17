@@ -46,26 +46,27 @@
 	</style>
 	</head>
 	<body>
+	<div class="container">
 		<header>
 			<h1>Lucky Sevens</h1>
 		</header>
 	
 		<!-- This will be the section that the user interacts with
 			to make starting bet and hits play button -->
-		<section class="startPage">
+		<!-- <section class="startPage -->
 		<!-- call for rollDice function-->
 			<form name="startingBet" onsubmit="return validateItems();" 
           onreset="resetForm();" class="form-inline">
 				<div class="form-group">
-					<label id="sBet">Starting Bet:</label>
-						<input type="text" id="money" required>
+					<label for="num">Starting Bet:</label>
+						<input type="number" class="form-control" id="num">
 				</div>	
+				<button type="submit" id="submitButton" class="btn btn-outline-success">Play</button>
 			</form><br />
 			<!-- adding button from Bootstrap website -->	
-			<div>
-				<button type="submit" class="btn btn-outline-success">Play</button>
-			</div>
-		</section>
+		<!--</section> -->
+	</div>	
+		
 	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
