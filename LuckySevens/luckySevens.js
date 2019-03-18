@@ -56,27 +56,60 @@ function resetForm() {
 function validateItems() {
     clearErrors();
     var money = document.forms["startingBet"]["num"].value;
-    if (money == "" || isNaN(money)) {
-        alert("num must be filled in with a positive integer.");
+    if (money <= 0 || isNaN(money)) {
+        alert("input must be filled in with a positive integer.");
         document.forms["startingBet"]["num"]
            .parentElement.className = "form-group has-error";
         document.forms["startingBet"]["num"].focus();
         return false;
     }
-   if (num2 == "" || isNaN(num2)) {
-       alert("Num2 must be filled in with a number.");
-       document.forms["numberFun"]["num2"]
-          .parentElement.className = "form-group has-error"
-       document.forms["numberFun"]["num2"].focus();
-       return false;
+	
+   var die1 = function rollDice() {
+	return Math.floor(Math.random() * 6) + 1;
+	}
+	
+	var die2 = function rollDice() {
+	return Math.floor(Math.random() * 6) + 1;
+	}
+	
+	var rolls = new Array();
+	
+	while(money > 0){
+		if (die1 + die2 == 7){
+			money = money +4;
+			rolls[rolls.length] = rolls++
+		} else if (die1 + die2 !== 7){
+			money = money - 1;
+			rolls[rolls.length] = rolls++;
+		}
+	}
+			
+		
+	function max(arr){
+ var max = arr[0];
+ for(var i =0; i<rolls.length; i++){
+   if(max[i] > max){
+     max = max[i];   
    }
+ }
+	}
+}
+   
+  
+
+	
+	
+	
+	
+	
+   
+   
    document.getElementById("results").style.display = "block";
-   document.getElementById("submitButton").innerText = "Recalculate";
-   document.getElementById("addResult").innerText = Number(num1) +
-                                                     Number(num2);
-   document.getElementById("subtractResult").innerText = num1 - num2;
-   document.getElementById("multiplyResult").innerText = num1 * num2;
-   document.getElementById("divideResult").innerText = num1 / num2;
+   document.getElementById("submitButton").innerText = "Play";
+   document.getElementById("startBet").innerText = startingBet;
+   document.getElementById("totalRolls").innerText = rolls;
+   document.getElementById("moneyPeak").innerText = max;
+ document.getElementById("rollPeak").innerText = max[i];
    // We are returning false so that the form doesn't submit 
    // and so that we can see the results
    return false;
